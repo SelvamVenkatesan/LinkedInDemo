@@ -32,6 +32,7 @@ public class UserController {
     @GetMapping
     public ResponseEntity<List<UserEntity>> getAllUsers() {
         List<UserEntity> users = userService.getAllUsers();
+        System.out.println("hi");
         return new ResponseEntity<>(users, HttpStatus.OK);
     }
 
