@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EntityScan(basePackages = "model")
 @ComponentScan(basePackages = "model")
 @EnableJpaRepositories(basePackages = "repository")
-
+@ComponentScan(basePackages = {"process", "controller", "service", "repository", "model"})
 public class LinkedInDemoApplication {
 
     public static void main(String[] args) {
